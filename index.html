@@ -7,48 +7,54 @@
     <title>My Website</title>
 
     <!-- Google Tag Manager -->
-    
+    <!---
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-TQZMPVB6');</script>
-    <!-- End Google Tag Manager -->
-<!--
-<script async>
-            const user_id = prompt("Enter a number: ");
-            const product = prompt('Enter the product User/Admin')
-</script>
 -->
+    <!-- End Google Tag Manager -->
 
   </head>
   <body>
 
     <!-- Google Tag Manager (noscript) -->
-    
+    <!--
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQZMPVB6"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    -->
 
     <!-- End Google Tag Manager (noscript) -->
 
 
         <script>
-        
-
-        window.dataLayer = window.dataLayer || [];
-        //dataLayer.push(arguments);
-        dataLayer.push({'user_id':'1889898',
-                        'product_page': 'Admin'});
-
+            const user_id = prompt("Enter a number: ");
         </script>
 
-<!--
+
+       <script>
+        window.dataLayer = window.dataLayer || [];
+        //dataLayer.push(arguments);
+        dataLayer.push({'user_id':user_id});
+        dataLayer.push({'product_page':'home'});
+        </script>
+
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-TQZMPVB6');</script>
--->
+<!--
+        function gtag() { dataLayer.push(arguments);
+                        dataLayer.push({'user_id':'122345'});
+                        dataLayer.push({'product_page':'home'});
+                        }
+        gtag('js', new Date());
+
+        gtag('config', 'GTM-TQZMPVB6');
+        </script>
+    -->
     <main>
         <h1>Welcome to My Website</h1>  
         <p>This is my new website which is hosted on GitHub Pages!</p>
