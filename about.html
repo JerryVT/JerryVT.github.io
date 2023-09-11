@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+
+    </head>
+  <body>
+
+    <main>
+        <h1>Welcome to My About page</h1>  
+        <p>About!</p>
+    </main>
+
+    <!-- Start of Refiner client code snippet -->
+<script type="text/javascript">
+
+  //let user_id = 1321459;
+  #var user_id = Math.floor(Math.random() * 100000000);
+  var user_id = 70872055;
+  console.log("User ID :",user_id)
+  let user_name = 'Jack';
+  let platform = 'sales';
+  let email_id = 'jack@example.com';
+  let user_type = 'admin'
+
+  window._refinerQueue = window._refinerQueue || []; function _refiner(){_refinerQueue.push(arguments);} _refiner('setProject', 'dde8bc40-49df-11ee-880c-475cc1668b53'); (function(){var a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src="https://js.refiner.io/v001/client.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();
+  
+  _refiner('identifyUser', {
+      id: user_id, // Replace with your user ID
+      email: email_id, // Replace with user Email
+      name: user_name, // Replace with user name
+      platform_type : platform,
+      user_type : user_type
+  });
+  
+  </script>
+  <!-- End of Refiner client code snippet -->
+
+  </body>
+</html>
