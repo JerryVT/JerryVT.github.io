@@ -12,6 +12,7 @@
     <main>
         <h1>Welcome to My About page Rev 13</h1>  
         <p>About!</p>
+        <button id="ABOUT">Click me</button>
     </main>
 
     <!-- Start of Refiner client code snippet -->
@@ -37,6 +38,31 @@
       platform_type : platform,
       user_type : user_type
   });
+
+  <!-- Add a button with an id -->
+    
+
+    <
+        // Define a function to trigger the custom event
+        function triggerCustomEvent() {
+            // Create a new custom event
+            const event = new Event('customEvent');
+
+            // Dispatch the event on the button element
+            document.getElementById('ABOUT').dispatchEvent(event);
+        }
+
+        // Add an event listener to the button
+        document.getElementById('ABOUT').addEventListener('click', function() {
+            // Call the function to trigger the custom event
+            triggerCustomEvent();
+        });
+
+        // Add an event listener for the custom event
+        document.getElementById('ABOUT').addEventListener('customEvent', function() {
+            alert('Custom event triggered!');
+        });
+
   
   </script>
   
