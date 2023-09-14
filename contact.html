@@ -12,6 +12,7 @@
     <main>
         <h1>Contact Rev 13</h1>  
         <p>Contact new!</p>
+        <button id="Contact">Click me</button>
     </main>
 
     <!-- Start of Refiner client code snippet -->
@@ -37,6 +38,27 @@ const numbers = [1, 2, 3, 4, 5];
       platform_type : platform,
       user_type : user_type
   });
+
+  function triggerCustomEvent() {
+            // Create a new custom event
+            const event = new Event('customEventContact');
+
+            // Dispatch the event on the button element
+            document.getElementById('Contact').dispatchEvent(event);
+        }
+
+        // Add an event listener to the button
+        document.getElementById('Contact').addEventListener('click', function() {
+            // Call the function to trigger the custom event
+            triggerCustomEvent();
+        });
+
+        // Add an event listener for the custom event
+        document.getElementById('Contact').addEventListener('customEventContact', function() {
+            alert('Custom event triggered!');
+        });
+
+        _refiner('trackEvent', 'customEventContact');
   
   
   </script>

@@ -46,7 +46,7 @@
         // Define a function to trigger the custom event
         function triggerCustomEvent() {
             // Create a new custom event
-            const event = new Event('customEvent');
+            const event = new Event('customEventAbout');
 
             // Dispatch the event on the button element
             document.getElementById('ABOUT').dispatchEvent(event);
@@ -59,10 +59,11 @@
         });
 
         // Add an event listener for the custom event
-        document.getElementById('ABOUT').addEventListener('customEvent', function() {
+        document.getElementById('ABOUT').addEventListener('customEventAbout', function() {
             alert('Custom event triggered!');
         });
 
+        _refiner('trackEvent', 'customEventAbout');
   
   </script>
   
